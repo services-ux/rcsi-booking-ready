@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Ready | RCSI Aptitude Test</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div>
+          <div class="brand-name">RCSI Aptitude Test</div>
+          <h1>Booking Ready</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="submission-count" id="submissionCount"></div>
+        <div class="logo-card">
+          <img class="eirepath-logo" src="./assets/eirepath-emblem-transparent.png" alt="" />
+          <span class="eirepath-wordmark">
+            <strong>EIREPATH</strong>
+            <small>Global Connect</small>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="candidate-panel" aria-label="Candidates">
+        <div class="panel-header">
+          <h2>Candidates</h2>
+          <label class="search-field">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+            </span>
+            <input id="candidateSearch" type="search" placeholder="Search candidates" autocomplete="off" />
+          </label>
+        </div>
+        <div class="candidate-list" id="candidateList"></div>
+      </aside>
+
+      <section class="detail-panel" aria-live="polite">
+        <div class="detail-card">
+          <div class="candidate-hero">
+            <div id="detailPhoto" class="detail-photo" role="img"></div>
+            <div class="candidate-heading">
+              <p class="label" id="detailStatus">Selected candidate</p>
+              <h2 id="detailName"></h2>
+              <p id="detailEmail" class="muted"></p>
+            </div>
+          </div>
+
+          <dl class="candidate-data">
+            <div>
+              <dt>Full Address</dt>
+              <dd id="detailAddress"></dd>
+            </div>
+            <div>
+              <dt>RCSI / NMBI Number</dt>
+              <dd id="detailNumber"></dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd id="detailPhone"></dd>
+            </div>
+            <div>
+              <dt>DL Expiry</dt>
+              <dd id="detailExpiry"></dd>
+            </div>
+            <div>
+              <dt>Date of Birth</dt>
+              <dd id="detailDob"></dd>
+            </div>
+          </dl>
+
+          <div class="download-group" aria-label="Candidate downloads">
+            <a id="decisionLink" class="download-row" href="#" download>
+              <span class="download-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg>
+              </span>
+              <span>
+                <strong>Decision Letter</strong>
+                <small>Download NMBI decision letter</small>
+              </span>
+              <span class="arrow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              </span>
+            </a>
+
+            <a id="photoLink" class="download-row" href="#" download>
+              <span class="download-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M15 8h.01"/><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="m4 15 4-4a3 3 0 0 1 4.2 0L20 18"/></svg>
+              </span>
+              <span>
+                <strong>Photo</strong>
+                <small>Download attached candidate photo</small>
+              </span>
+              <span class="arrow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              </span>
+            </a>
+
+            <a id="passportLink" class="download-row" href="#" download>
+              <span class="download-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h11a3 3 0 0 1 3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 7h5"/><path d="M8 11h8"/><path d="M8 15h6"/></svg>
+              </span>
+              <span>
+                <strong>Passport Bio Page</strong>
+                <small>Download passport biography page</small>
+              </span>
+              <span class="arrow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
