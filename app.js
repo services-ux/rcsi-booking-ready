@@ -154,7 +154,8 @@ const candidates = [
     phone: "+971 56 790 6195",
     expiry: "18 May 2027",
     dob: "30 March 1979",
-    address: "Not yet available. Current location noted as Abu Dhabi, UAE; full residential address not supplied yet.",
+    address:
+      "P O BOX 34555. Current Residential Address: Zone District code - W24_02- C25, Al Mushrif, Building NO 79, Flat no 205, Abudhabi, UAE",
     status: "Document set available",
     photo: "Mini_George_Nedumthakidi_Photo.png",
     passport: "Mini_George_Nedumthakidi_Passport.pdf",
