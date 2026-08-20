@@ -51,7 +51,7 @@ const candidates = [
   },
   {
     name: "Dona Immanuel",
-    email: "donaimmanuel26@gmail.com",
+    email: "immaniesdona@gmail.com",
     number: "APP-07250326-118071",
     phone: "+91 94465 95161",
     expiry: "14 Apr 2027",
